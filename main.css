@@ -1,0 +1,242 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #ec008c;
+  color: #fff;
+  padding: 15px 50px;
+  display: flex;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 35px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 50px; /* Removed padding for better responsiveness */
+  margin: 0;
+  display: flex;
+  font-weight: bold;
+}
+
+.nav-links li {
+  margin-right: 30px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center; /* Center align text for mobile */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding: 5px;
+    padding-bottom: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Adjusted margin for better spacing in mobile layout */
+  }
+}
+/* Masthead */
+.masthead {
+  background-color: #f2f2f2;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.tagline h1 {
+  font-size: 30px;
+  color: #333;
+}
+
+/* Main Content */
+main {
+  padding: 10px 0;
+}
+
+.home-page {
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+.home-page h2 {
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 30px;
+  color: #ec008c;
+}
+
+img {
+  height: auto;
+  width: 450px;
+  float: left;
+  margin-right: 20px;
+}
+.home-page article {
+  margin-bottom: 30px;
+  background-position: center;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+/* Clear the margin for the last article in each column */
+.home-page article:nth-child(3n) {
+  margin-right: 0;
+}
+
+.home-page article h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+.home-page article p {
+  padding: 20px;
+  margin: 0;
+  color: #333;
+}
+
+/* Portfolio Page */
+.portfolio-page {
+  margin-top: 50px;
+}
+
+.card {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card h3 {
+  padding: 20px;
+  margin: 0;
+}
+
+/* Footer */
+/* Footer */
+footer {
+  background-color: #ec008c;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 5px 180px;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section a i {
+  margin-right: 5px;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px; /* Adjust according to your design */
+  margin: 20px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 600px) {
+  /* Tablet view: 2 columns */
+  .card {
+    width: calc(50% - 20px); /* Adjust according to your design */
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* Desktop view: 3 columns */
+  .card {
+    width: calc(33.33% - 20px); /* Adjust according to your design */
+  }
+}
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+}
